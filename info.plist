@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>project-opener</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>5864AE25-E2D5-429A-852B-D846FFFE9C5D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>138E9AED-C620-4FE4-A05A-3005DCE8DCF2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>82708759-D999-4EA5-9AC4-91B285EA0D6B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Feng Kun</string>
+	<key>description</key>
+	<string>Open Project By Sublime&amp;PHPSTORM</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open Project By Sublime&amp;PHPSTORM</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a /Applications/Sublime\ Text.app {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>sl</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading PHPStorm projects</string>
+				<key>script</key>
+				<string>python sublime.py {query}</string>
+				<key>subtext</key>
+				<string>Open your PHPStorm project</string>
+				<key>title</key>
+				<string>Open a PHPStorm project</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>82708759-D999-4EA5-9AC4-91B285EA0D6B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>ps</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading PHPStorm projects</string>
+				<key>script</key>
+				<string>python phpstorm.py {query}</string>
+				<key>subtext</key>
+				<string>Open your PHPStorm project</string>
+				<key>title</key>
+				<string>Open a PHPStorm project</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5864AE25-E2D5-429A-852B-D846FFFE9C5D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>open -a /Applications/PhpStorm.app {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>138E9AED-C620-4FE4-A05A-3005DCE8DCF2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Alfred 2 Sublime&amp;PHPSTORM project opener
+This an Alfred 2 workflow for opening projects
+
+## Usage
+Setup:
+1. Open the workflow in Finder
+2. Add you Main project directory to the config.json file
+
+Usage:
+Keyword sl {project}
+Keyword ps {project}</string>
+	<key>uidata</key>
+	<dict>
+		<key>138E9AED-C620-4FE4-A05A-3005DCE8DCF2</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>5864AE25-E2D5-429A-852B-D846FFFE9C5D</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>6BF8ABD6-F9CF-4C9D-9498-55B7F1FAC456</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>82708759-D999-4EA5-9AC4-91B285EA0D6B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>www.allshare.rocks</string>
+</dict>
+</plist>
